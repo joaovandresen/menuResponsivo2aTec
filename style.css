@@ -6,16 +6,19 @@
 
 body{
     font-family: sans-serif;
-
+    font-size: 18px;
+    background-color: #f2f2f2;
 }
 
 header{
-    background-color: yellowgreen;
-    color: beige;
+    background-color: black;
+    color: white;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 15px 30px;
 }
 
 nav ul{
@@ -23,4 +26,54 @@ nav ul{
 
     display: flex;
     gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: lightblue;
+}
+
+main{
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+input, select{
+    padding: 8px;
+    width: 100%;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
